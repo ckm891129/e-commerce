@@ -1,5 +1,4 @@
 /* tslint:disable:no-unused-variable */
-  
 import { TestBed, async } from '@angular/core/testing';
 import { Order } from './order';
 import { OrderItem } from './order-item';

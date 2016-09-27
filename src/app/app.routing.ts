@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 // import component that going to use for each page
 import { ReceiptComponent  } from './receipt/receipt.component';
 import { ReceiptSelectorComponent  } from './receipt-selector/receipt-selector.component';
+import { AboutComponent } from './about/about.component';
 
 // create appRoute constant
 const appRoute:Routes = [
@@ -20,10 +21,20 @@ const appRoute:Routes = [
         path: 'home',
         component: ReceiptSelectorComponent
     },
+      /*
     {
         path: 'receipt',
         component: ReceiptComponent
+    }*/
+    {
+        path: 'receipt/:id',
+        component: ReceiptComponent
+    },
+    {
+        path: 'about',
+        component: AboutComponent
     }
+  
 ]
 
 // export the routing to module

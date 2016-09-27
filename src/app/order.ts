@@ -1,5 +1,6 @@
 import { OrderItem } from "./order-item"
 
+
 export class Order {
     id:string // change id type to string
     create_time:Date;
@@ -24,8 +25,6 @@ export class Order {
         });
         return sum;
     }
-
     // test.filter((value, index, arr) => { return value.age > 0})
-
 }
 
