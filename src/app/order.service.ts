@@ -42,9 +42,8 @@ export class OrderService {
     let order_array;
     if (typeof string_data == 'undefined')
     {
-      // when we not found data
-      order_array = ORDERS;
       // save data in localstorage
+      order_array = ORDERS;
       this._orders = this.loadData(order_array);
       this.save()
     }

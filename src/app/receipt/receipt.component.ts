@@ -3,7 +3,7 @@ import { OrderService } from '../order.service';
 import { Order } from '../order';
 
 // get the data from router
-import { ActivatedRoute, Params } from '@angular/router'
+import { ActivatedRoute, Params } from '@angular/router' 
 
 @Component({
   selector: 'app-receipt',
