@@ -51,6 +51,8 @@ export class OrderService {
     else {
       // when we found data
       order_array = JSON.parse(string_data);
+      // we need to use loadData because without this we cannot to the getTotal of the data...
+      // to make the JSON become an array of orders
       this._orders = this.loadData(order_array);
     }
 

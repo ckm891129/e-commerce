@@ -19,6 +19,11 @@ export class ReceiptComponent implements OnInit {
 
  constructor(private od:OrderService, private currentRoute: ActivatedRoute) {
     // this.order = od.getAllOrder()[0];
+
+    // // this need to do a lot if alots
+    // // and only works for the localstorage
+    // // if the main of the "order.service.ts" on the constructor didint do the this.load()
+    // this.od.load();
   }
 
   ngOnInit() {
