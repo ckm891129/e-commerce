@@ -11,19 +11,19 @@ export class OrderService {
   getAllOrder():Array<Order>{
     let orders = [
       new Order([
-        new OrderItem('Black',1,2490),
-        new OrderItem('Blue',2,2490),
-        new OrderItem('White',1,2490),
+        new OrderItem('Black',1,100),
+        new OrderItem('Blue',2,200),
+        new OrderItem('White',1,300),
       ], new Date("2015-02-04")),
       new Order([
-        new OrderItem('Proton',1,2490),
-        new OrderItem('Honda',2,2490),
-        new OrderItem('Toyota',1,2490),
+        new OrderItem('Proton',1,222),
+        new OrderItem('Honda',2,444),
+        new OrderItem('Toyota',1,666),
       ], new Date("2015-02-02")),
       new Order([
-        new OrderItem('all',1,2490),
-        new OrderItem('non',2,2490),
-        new OrderItem('either',1,2490),
+        new OrderItem('all',1,999),
+        new OrderItem('non',2,678),
+        new OrderItem('either',1,907),
       ], new Date("2015-12-02"))
 
     ]
@@ -31,7 +31,7 @@ export class OrderService {
   }
 
   // (c ii) get order(id)
-   getOrder(id:number){
+   getOrder(id:string){
      let all_order = this.getAllOrder();
      for (let i = 0; i < all_order.length; i++)
       if(all_order[i].id == id)
