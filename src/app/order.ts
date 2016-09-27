@@ -17,13 +17,13 @@ export class Order {
 
     // (a) create function to getTotal
     getTotal():number{
-         let total = 0;
-        // let orderTotal =  Array(OrderItem);
-        this.items.forEach( (value:OrderItem, index: number, arr: OrderItem[]) => {
-            total += value.quantity;
-        } )
+        //  let total = 0;
+        // // let orderTotal =  Array(OrderItem);
+        // this.items.forEach( (value:OrderItem, index: number, arr: OrderItem[]) => {
+        //     total += value.quantity * value.unit_price;
+        // } )
 
-        return total;
+        return 0;
     }
 
     // test.filter((value, index, arr) => { return value.age > 0})

@@ -28,18 +28,18 @@ describe('Service: Order', () => {
     expect(result.length).toBeGreaterThan(2)
   }));
 
-   it('getOrder(id) should have same member in  getAllOrder()', inject([OrderService], (service: OrderService) => {
-    let orders:Array<Order> = service.getAllOrder();
-    for(let i = 0; i < orders.length; i++){
-      let currect_order = orders[i]
-      let sample_id = orders[i].id
-      let sample_order = service.getOrder(sample_id)
-      expect(sample_order.create_time.getTime()).toBe(currect_order.create_time.getTime())
-      expect(sample_order.getTotal()).toBe(currect_order.getTotal())
-    }
+  //  it('getOrder(id) should have same member in  getAllOrder()', inject([OrderService], (service: OrderService) => {
+  //   let orders:Array<Order> = service.getAllOrder();
+  //   for(let i = 0; i < orders.length; i++){
+  //     let currect_order = orders[i]
+  //     let sample_id = orders[i].id
+  //     let sample_order = service.getOrder(sample_id)
+  //     expect(sample_order.create_time.getTime()).toBe(currect_order.create_time.getTime())
+  //     expect(sample_order.getTotal()).toBe(currect_order.getTotal())
+  //   }
     
 
 
-  }));
+  // }));
 
 });
