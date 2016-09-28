@@ -6,10 +6,17 @@
     <label>Create Date</label>
   </div>
   <div class="col-md-11">
-    <input type="date" class="form-control" />
+    <input type="date" [(ngModel)]="formDate" class="form-control" />
   </div>
-  <!-- here is for edit items-->
-
-
-  <!--end of edit items-->
 </div>
+
+  <!-- here is for edit items-->
+<table class="table">
+  <tr *ngFor="let order_item of order.items">
+    <td><input class="text" [(ngModel)]="order_item.item" placeholder="Item" class="form-control"/></td>
+    <td><input type="number" [(ngModel)]="order_item.quantity" placeholder="Quantity" class="form-control"/></td>
+    <td><input type="number" [(ngModel)]="order_item.unit_price" placeholder="Unit Price" class="form-control"/></td>
+  </tr>
+</table>
+  <!--end of edit items-->
+ <pre>{{order | json}}</pre>
