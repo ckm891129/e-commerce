@@ -14,7 +14,8 @@ import { ReceiptSelectorComponent } from './receipt-selector/receipt-selector.co
 
 // import routing here
 import { routing } from './app.routing';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { ReceiptEditorComponent } from './receipt-editor/receipt-editor.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutComponent } from './about/about.component'
     TaxPipePipe,
     ReceiptComponent,
     ReceiptSelectorComponent,
-    AboutComponent
+    AboutComponent,
+    ReceiptEditorComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,9 @@ import { ReceiptComponent  } from './receipt/receipt.component';
 import { ReceiptSelectorComponent  } from './receipt-selector/receipt-selector.component';
 import { AboutComponent } from './about/about.component';
 
+// day 3 - add receiptEditor item -1
+import { ReceiptEditorComponent } from './receipt-editor/receipt-editor.component'
+
 // create appRoute constant
 const appRoute:Routes = [
     {
@@ -33,6 +36,11 @@ const appRoute:Routes = [
     {
         path: 'about',
         component: AboutComponent
+    },
+    {
+        // day 3 add path item 2
+        path: 'editor/:id', // change from editor
+        component: ReceiptEditorComponent
     }
   
 ]
