@@ -8,9 +8,7 @@
   <tr *ngFor="let item of orders">
     <td>
       <a routerLink="../receipt/{{item.id}}">{{item.id}}</a>
-      <!--day 3 add the edit select to edit the item-->
-      <!--add button style to EDIT button as well-->
-      <a routerLink="../editor/{{item.id}}" class="btn btn-primary">EDIT</a>
+      <a class="btn btn-primary" routerLink="../editor/{{item.id}}">EDIT</a>
     </td>
     <td>{{item.getTotal() | currency:"MYR" }}</td>
   </tr>

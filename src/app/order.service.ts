@@ -123,4 +123,30 @@ export class OrderService {
 
   }
 
+  // update order and save to our db
+  updateOrder(order:Order){
+    // find index of order in _ordrs.
+    // if TS is 2.x.x
+    let index = this._orders.findIndex( item => {
+      return item.id == order.id
+    })
+
+    // // if < 2.x.x of TS
+    // let index = -1;
+    // for (let i = 0; this._orders.length; i++)
+    // if (this._orders[i].id == order.id){
+    //   index = i
+    //   break
+    // }
+
+    // replace _order[index] with order
+    this._orders[index] = order;
+
+    // save
+    this.save();
+
+
+
+  }
+
 }

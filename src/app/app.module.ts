@@ -11,11 +11,11 @@ import { TaxPipePipe } from './tax-pipe.pipe';
 import  { OrderService } from './order.service';
 import { ReceiptComponent } from './receipt/receipt.component';
 import { ReceiptSelectorComponent } from './receipt-selector/receipt-selector.component'
+import { ReceiptEditorComponent } from './receipt-editor/receipt-editor.component'
 
 // import routing here
 import { routing } from './app.routing';
-import { AboutComponent } from './about/about.component';
-import { ReceiptEditorComponent } from './receipt-editor/receipt-editor.component'
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [

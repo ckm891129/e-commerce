@@ -10,13 +10,26 @@
   </div>
 </div>
 
+<br/>
+<div class="debug-mode">
+  validate status: {{validate()}}
+</div>
+<br/>
+
   <!-- here is for edit items-->
+  <button class="btn btn-primary" (click)="addItem()">Add Item</button>
+  <br/>
 <table class="table">
-  <tr *ngFor="let order_item of order.items">
+  <tr *ngFor="let order_item of order.items; let i =index">
     <td><input class="text" [(ngModel)]="order_item.item" placeholder="Item" class="form-control"/></td>
     <td><input type="number" [(ngModel)]="order_item.quantity" placeholder="Quantity" class="form-control"/></td>
     <td><input type="number" [(ngModel)]="order_item.unit_price" placeholder="Unit Price" class="form-control"/></td>
+    <td><button class="btn btn-danger" (click)="deleteItem(i)">Delete</button></td>
   </tr>
 </table>
+<div>
+  <button (click)="onSave()" class="btn btn-success" style="button">Save</button>
+</div>
   <!--end of edit items-->
- <pre>{{order | json}}</pre>
+<pre>{{order | json}}</pre>
+<pre>{{formDate | json}}</pre>
